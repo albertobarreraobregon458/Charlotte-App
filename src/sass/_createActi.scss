@@ -1,0 +1,137 @@
+@use "mixingfunc";
+#cont-new-review {
+  @include mixingfunc.measures(1251px, 840px, 424px, 144px);
+  position: absolute;
+  background: #ffffff;
+  border-radius: 20px;
+
+  .title {
+    box-sizing: border-box;
+    padding-left: 19px;
+    padding-right: 10px;
+    position: absolute;
+    width: 1194px;
+    height: 51px;
+    left: 29px;
+    top: 65px;
+    color: #000;
+    border: 1px solid #8f8f8f;
+    border-radius: 10px;
+    font-size: 25px;
+  }
+}
+#list-select {
+  display: flex;
+  justify-content: space-between;
+  .list-one {
+    box-sizing: border-box;
+    position: absolute;
+    @include mixingfunc.measures(590px, 51px, 29px, 131px);
+    @include mixingfunc.font-style(Poppins, normal, 400, 25px, 130%, center);
+    border: 1px solid #8f8f8f;
+    border-radius: 10px;
+    padding-left: 19px;
+    color: #000000;
+  }
+
+  .list-two {
+    box-sizing: border-box;
+    position: absolute;
+    @include mixingfunc.measures(590px, 51px, 633px, 131px);
+
+    border: 1px solid #8f8f8f;
+    border-radius: 10px;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    /* or 32px */
+
+    color: #000000;
+    padding-left: 19px;
+  }
+  .author {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1194px;
+    height: 51px;
+    left: 29px;
+    top: 197px;
+    border: 1px solid #8f8f8f;
+    border-radius: 10px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    padding-left: 19px;
+    padding-right: 10px;
+    /* or 32px */
+
+    color: #000000;
+  }
+
+  #area {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1194px;
+    height: 483px;
+    left: 29px;
+    top: 263px;
+
+    border: 1px solid #8f8f8f;
+    border-radius: 10px;
+
+    .txtarea {
+      margin-top: 40px;
+      resize: none;
+      border-radius: 10px;
+      width: 1194px;
+      height: 441px;
+    }
+  }
+}
+
+#create-review {
+  position: absolute;
+  width: 226px;
+  height: 48px;
+  left: 997px;
+  top: 771px;
+
+  background: #338af3;
+  border-radius: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 130%;
+  transition: all 0.4s ease;
+
+  color: #ffffff;
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
+}
+
+.p1 {
+  position: absolute;
+  width: 278px;
+  height: 39px;
+  left: 17px;
+  top: 11px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 130%;
+  /* identical to box height, or 39px */
+
+  color: #000000;
+}
