@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Courses</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <section class="cont-new-resource open-form-resource">
+            <section class=" crud-resource" id="cont-form-resource">
+                <article>
+                    <p class="crud-title-resource font-title-resource">Create New Resource</p>
+                    <form class="crud-form-resource">
+                        <input type="hidden" name="idi">
+
+                        <input class="title-resource" type="text" name="resourceTitle" placeholder="Resource Title"
+                            required>
+
+                        <select class="input-category-resource" name="category">
+                            <option selected disabled="">Category</option>
+                            <option>Books</option>
+                            <option>Directives</option>
+                            <option>Paradigm</option>
+                            <option>Creative</option>
+                            <option>Accountabilly</option>
+                            <option>Research</option>
+                            <option>Identity</option>
+                            <option>Quality</option>
+                            <option>Program</option>
+                            <option>Functionality</option>
+                            <option>Configuration</option>
+                        </select>
+
+                        <select class="input-tags-resource" name="tags">
+                            <option selected disabled="">Optional Tags</option>
+                            <option>Read</option>
+                            <option>Listen</option>
+                            <option>Speak</option>
+
+                        </select>
+
+
+                        <div id="area-resource">
+                            <textarea name="description" class="txtarea-resource" cols="30" rows="10"> </textarea>
+                        </div>
+
+
+
+
+
+                    </form>
+                    <input id="create-resource" type="submit" value="Create Resource" class="btn-submit">
+                </article>
+
+            </section>
+        </section>
+
+        <div class="menu">
+            <a href="" class="menu__logo"></a>
+            <div class="menu__list">
+                <li><a href="">Students</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="/src/views/courses/courses.html">Courses</a></li>
+                <li><a href="/src/views/activity/actividades.html">Activities</a></li>
+                <li class=" press"><a href="/src/views/resource/resource.html">Resources</a></li>
+                <li><a href="">Certificates</a></li>
+                <li><a href="" class="space">Private classes</a></li>
+                <div class="space-top">
+                    <li><a href="/src/views/promotions/promotions.html">Offers</a></li>
+                    <li><a href="">Memberships</a></li>
+                    <li><a href="">Referrals</a></li>
+                    <li><a href="">Sponsors</a></li>
+                    <li><a href="/src/views/index.html">Reviews</a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <section id="nav">
+
+            <div class="nav__icon">
+                <i class="fas fa-bell"></i>
+                <i class="far fa-envelope"></i>
+                <a href="" class="profile"></a>
+            </div>
+        </section>
+
+        <section class="cont-tables-resource ">
+            <div class="cont-table-resource_blue">
+                <table class="crud-table-resource table-resource">
+                </table>
+            </div>
+            <button class="btn-resource">Add New Resource</button>
+        </section>
+
+        <section id="modal-container-resource">
+            <div class="modal-promotion modal-close-resource">
+                <h3 class="title-modal-resource">National Data Consultant</h3>
+                <div class="close-resource"><i class="fas fa-times-circle"></i></div>
+                <p class="price-prom">342.00</p>
+                <p class="offer-prom">99.00</p>
+                <p class="date-prom">26/12/22</p>
+                <div class="cont-p-promotion">
+                    <p>
+                        Facilis recusandae natus dolores quidem consectetur animi quis accusantium nostrum a hic
+                        cupiditate voluptas, nihil eveniet, nam placeat necessitatibus inventore repellat architecto
+                        laborum repudiandae, veniam labore! Odio minima porro vero?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloribus quae quam eveniet
+                        provident! Commodi, illo aperiam eveniet earum saepe id animi vel ipsam, nobis ad porro placeat
+                        neque explicabo?
+                    </p>
+                    <div class="off"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <form class="form-delete" action="">
+            <section id="modal-container-d">
+                <div class="modal-d modal-close-d">
+                    <h3>Delete item</h3>
+                    <textarea name="cuadro" id="text-d" cols="30" rows="10" placeholder="Reason..." required></textarea>
+                    <button type="submit" class="close-d bnt-d">Yes, Delete</button>
+                    <button class="close-d btn-d2">Cancel</button>
+
+                </div>
+            </section>
+
+        </form>
+
+        <section class="container-notify-succes sucesx alert" id="alert">
+            <i class="fas fa-check-circle close-notify-succes"></i>
+            <p class="parrafo-succes"></p>
+            <!--   <i class="fas fa-check-circle check-succes"></i> -->
+
+        </section>
+
+        <!--  <section id="container-noti">
+            <div class="noti__idea"></div>
+            <p class="noti__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt eius,
+                animi fugiat debitis, id ipsa sint recusandae eum nobis odit sequi nihil dicta beatae qui eveniet
+                mollitia, excepturi adipisci.</p>
+
+        </section> -->
+
+        <template id="crud-template-resource">
+            <tr>
+                <td class="id-resource"></td>
+                <td class="resourceTitle"></td>
+                <td class="resourceCategory"></td>
+                <td class="resourceTags"></td>
+
+                <td>
+
+                    <div class="icons">
+                        <i class="fas fa-dot-circle read "></i>
+                        <i class="fas fa-pen edit"></i>
+                        <i class="fas fa-times-circle remove delete"></i>
+                    </div>
+                </td>
+            </tr>
+        </template>
+
+    </div>
+    <script src="/src/js/index.js" type="module"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/d65d9c50b6.js" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

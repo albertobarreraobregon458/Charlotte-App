@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Courses</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <section class="cont-new-promotion open-form-promotion">
+            <section class=" crud-promotion" id="cont-form-promotion">
+                <article>
+                    <p class="crud-title-promotion font-title-promotion">Create New Promotion</p>
+                    <form action="" class="crud-form-promotion">
+
+                        <input class="title-promotion" type="text" name="courseTitle" placeholder="Prmotion name"
+                            required>
+
+                        <select class="input-category-promotion" name="category">
+                            <option selected disabled="">Category</option>
+                            <option>Bussiness</option>
+                            <option>Engineer</option>
+                            <option>Specialist</option>
+                            <option>Associate</option>
+                            <option>Producer</option>
+                            <option>Developer</option>
+                            <option>Manager</option>
+                            <option>Technician</option>
+                            <option>Assistant</option>
+                        </select>
+                        <div>
+
+                            <input class="input-DateStart-promotion" type="date" name="dateeent"
+                                placeholder="Start Date*">
+                            <input class="input-price-promotion" type="number" name="price" placeholder="Price*">
+                            <input class="input-DateEnd-promotion" type="date" name="datestart"
+                                placeholder="Final Date*">
+                            <input class="input-offer-promotion" type="number" name="offer" placeholder="Offer*">
+                        </div>
+
+
+                        <div id="area-promotion">
+                            <textarea name="description" class="txtarea-promotion" cols="30" rows="10"> </textarea>
+                        </div>
+
+
+                        <input id="create-promotion" type="submit" value="Create Promotion">
+                        <input type="hidden" name="id">
+
+
+                    </form>
+                </article>
+
+            </section>
+        </section>
+
+        <div class="menu">
+            <a href="" class="menu__logo"></a>
+            <div class="menu__list">
+                <li><a href="">Students</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="/src/views/courses/courses.html">Courses</a></li>
+                <li><a href="/src/views/activity/actividades.html">Activities</a></li>
+                <li><a href="/src/views/resource/resource.html">Resources</a></li>
+                <li><a href="">Certificates</a></li>
+                <li><a href="" class="space">Private Classes</a></li>
+                <div class="space-top">
+                    <li class=" press"><a href="">Offers</a></li>
+                    <li><a href="">Memberships</a></li>
+                    <li><a href="">Referrals</a></li>
+                    <li><a href="">Sponsors</a></li>
+                    <li><a href="/src/views/index.html">Reviews</a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <section id="nav">
+
+            <div class="nav__icon">
+                <i class="fas fa-bell"></i>
+                <i class="far fa-envelope"></i>
+                <a href="" class="profile"></a>
+            </div>
+        </section>
+
+        <section class="cont-tables-promotion ">
+            <div class="cont-table-promotion_blue">
+                <table class="crud-table-promotion table-promotion">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Offer Title</th>
+                            <th>Price</th>
+                            <th>Offer</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+
+
+            <button class="btn-promotion">Add New Offer</button>
+
+        </section>
+
+        <section id="modal-container-promotion">
+            <div class="modal-promotion modal-close-promotion">
+                <h3 class="title-modal-promotion">National Data Consultant</h3>
+                <div class="close-promotion"><i class="fas fa-times-circle"></i></div>
+                <p class="price-prom">342.00</p>
+                <p class="offer-prom">99.00</p>
+                <p class="date-prom">26/12/22</p>
+                <div class="cont-p-promotion">
+                    <p>
+                        Facilis recusandae natus dolores quidem consectetur animi quis accusantium nostrum a hic
+                        cupiditate voluptas, nihil eveniet, nam placeat necessitatibus inventore repellat architecto
+                        laborum repudiandae, veniam labore! Odio minima porro vero?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloribus quae quam eveniet
+                        provident! Commodi, illo aperiam eveniet earum saepe id animi vel ipsam, nobis ad porro placeat
+                        neque explicabo?
+                    </p>
+                    <div class="off"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <form class="form-delete" action="">
+            <section id="modal-container-d">
+                <div class="modal-d modal-close-d">
+                    <h3>Delete item</h3>
+                    <textarea name="cuadro" id="text-d" cols="30" rows="10" placeholder="Reason..." required></textarea>
+                    <button type="submit" class="close-d bnt-d">Yes, Delete</button>
+                    <button class="close-d btn-d2">Cancel</button>
+
+                </div>
+            </section>
+
+        </form>
+
+        <section class="container-notify-succes sucesx " id="alert">
+            <i class="fas fa-check-circle close-notify-succes"></i>
+            <p class="parrafo-succes"></p>
+
+
+
+        </section>
+
+        <!--    <section id="container-noti">
+            <div class="noti__idea"></div>
+            <p class="noti__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt eius,
+                animi fugiat debitis, id ipsa sint recusandae eum nobis odit sequi nihil dicta beatae qui eveniet
+                mollitia, excepturi adipisci.</p>
+
+        </section> -->
+
+        <template id="crud-template-promotion">
+            <tr>
+                <td class="id-promotion"></td>
+                <td class="promotionTitle"></td>
+                <td class="promotionPrice"></td>
+                <td class="promotionOffer"></td>
+                <td class="promotionDateStart"></td>
+                <td>
+
+                    <div class="icons">
+                        <i class="fas fa-dot-circle read "></i>
+                        <i class="fas fa-pen edit"></i>
+                        <i class="fas fa-times-circle remove delete"></i>
+                    </div>
+                </td>
+            </tr>
+        </template>
+
+    </div>
+    <script src="/src/js/index.js" type="module"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/d65d9c50b6.js" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

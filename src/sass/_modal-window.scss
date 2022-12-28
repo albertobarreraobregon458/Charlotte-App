@@ -78,7 +78,7 @@
     @include mixingfunc.font-style(Poppins, normal, 400, 25px, 130%, center);
     text-align: justify;
     color: #000000;
-    overflow-y: hidden;
+    overflow-y: scroll;
   }
   .title-modal {
     position: absolute;

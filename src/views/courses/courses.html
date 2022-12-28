@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Courses</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <section class="cont-new-course open-form-course ">
+            <section class=" crud-course" id="cont-form-courses">
+                <article>
+                    <p class="crud-title-course font-title-course">Create New Course</p>
+                    <form action="" class="crud-form-course">
+
+                        <input type="hidden" name="idi">
+                        <input class="title-course" type="text" name="courseTitle" placeholder="Course Title" required>
+                        <select class="input-category-course" name="category">
+                            <option selected disabled="">Category</option>
+                            <option>Bussiness</option>
+                            <option>Engineer</option>
+                            <option>Specialist</option>
+                            <option>Associate</option>
+                            <option>Producer</option>
+                            <option>Developer</option>
+                            <option>Manager</option>
+                            <option>Technician</option>
+                            <option>Assistant</option>
+                        </select>
+
+                        <input class="input-price-course" type="number" name="price" placeholder="Price*">
+                        <div id="area-courses">
+                            <textarea name="description" class="txtarea-course" cols="30" rows="10"> </textarea>
+                        </div>
+                    </form>
+                    <input id="create-course" type="submit" value="Create Course" class="btn-submit">
+                </article>
+
+            </section>
+        </section>
+
+        <div class="menu">
+            <a href="" class="menu__logo"></a>
+            <div class="menu__list">
+                <div>
+                    <li><a href="">Students</a></li>
+                    <li><a href="">News</a></li>
+                    <li class="press"><a href="/src/views/courses/courses.html">Courses</a></li>
+                    <li><a href="/src/views/activity/actividades.html">Activities</a></li>
+                    <li><a href="/src/views/resource/resource.html">Resources</a></li>
+                    <li><a href="">Certificates</a></li>
+                    <li><a href="" class="space">Private Classes</a></li>
+
+                </div>
+                <div class="space-top">
+                    <li class="space2"><a href="/src/views/promotions/promotions.html">Offers</a></li>
+                    <li><a href="">Memberships</a></li>
+                    <li><a href="">Referrals</a></li>
+                    <li><a href="">Sponsors</a></li>
+                    <li><a href="/src/views/index.html">Reviews</a>
+
+                </div>
+            </div>
+        </div>
+
+        <section id="nav">
+            <div class="nav__icon">
+                <i class="fas fa-bell"></i>
+                <i class="far fa-envelope"></i>
+                <a href="" class="profile"></a>
+            </div>
+        </section>
+
+        <section class="cont-tables-course  ">
+            <div class="cont-table-course_blue">
+                <table class="crud-table-course table-course">
+                </table>
+            </div>
+            <button class=" btn-courses">Add New Course</button>
+        </section>
+
+        <section id="modal-container-course">
+            <div class="modal-course modal-close-course">
+                <h3 class="title-modal-course">web</h3>
+                <div class="close-course"><i class="fas fa-times-circle"></i></div>
+                <div class="cont-p-courses">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quae officia ullam, magni nisi
+                        odit debitis, culpa quibusdam similique, accusantium temporibus? Necessitatibus temporibus in
+                        molestias saepe, error deserunt maxime iusto.
+                        Adipisci expedita doloremque numquam maiores saepe rerum nemo perferendis odit similique culpa
+                        ipsa amet tempore, eveniet perspiciatis dignissimos quam explicabo sapiente facere itaque harum,
+                        unde assumenda sit omnis commodi. Inventore.
+                        Facilis recusandae natus dolores quidem consectetur animi quis accusantium nostrum a hic
+                        cupiditate voluptas, nihil eveniet, nam placeat necessitatibus inventore repellat architecto
+                        laborum repudiandae, veniam labore! Odio minima porro vero?</p>
+                </div>
+                <p class="pe">Administrador</p>
+                <p class="do">889.00</p>
+            </div>
+        </section>
+
+        <form class="form-delete" action="">
+            <section id="modal-container-dc">
+                <div class="modal-d modal-close-dc">
+                    <h3>Delete item</h3>
+                    <textarea name="cuadro" id="text-dc" cols="30" rows="10" placeholder="Reason..."
+                        required></textarea>
+                    <button type="submit" class="close-dc bnt-dc">Yes, Delete</button>
+                    <button class="close-dc btn-dc2">Cancel</button>
+
+                </div>
+            </section>
+
+        </form>
+        <section class="container-notify-succes sucesx alert" id="alert">
+            <i class="fas fa-check-circle close-notify-succes"></i>
+            <p class="parrafo-succes"></p>
+            <!--   <i class="fas fa-check-circle check-succes"></i> -->
+
+        </section>
+        <!--   <section class="container-notify-succes sucesx">
+            <i class="fas fa-times-circle close-notify-succes"></i>
+            <p class="parrafo-succes">Created Successfully</p>
+            <i class="fas fa-check-circle check-succes"></i>
+
+        </section> -->
+
+        <!--         <section id="container-noti">
+            <div class="noti__idea"></div>
+            <p class="noti__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt eius,
+                animi fugiat debitis, id ipsa sint recusandae eum nobis odit sequi nihil dicta beatae qui eveniet
+                mollitia, excepturi adipisci.</p>
+
+        </section> -->
+
+        <template id="crud-template-course">
+            <tr>
+                <td class="id-course"></td>
+                <td class="courseTitle"></td>
+                <td class="category"></td>
+                <td class="price"></td>
+
+                <td>
+
+                    <div class="icons">
+                        <i class="fas fa-dot-circle read "></i>
+                        <i class="fas fa-pen edit"></i>
+                        <i class="fas fa-times-circle remove delete"></i>
+                    </div>
+                </td>
+            </tr>
+        </template>
+
+    </div>
+    <script src="/src/js/index.js" type="module"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/d65d9c50b6.js" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

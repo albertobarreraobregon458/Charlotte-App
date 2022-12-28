@@ -35,11 +35,12 @@
       list-style: none;
       margin-bottom: 15px;
       height: 38px;
-      transition: all 0.5s ease;
+      transition: all 0.5s linear;
+
 
       &:hover {
         width: 282px;
-        height: 46px;
+        height: 44px;
         background: #8eaaff;
         border-radius: 50px 0px 0px 50px;
         text-align: center;
@@ -47,14 +48,9 @@
 
       a {
         text-decoration: none;
-        @include mixingfunc.font-style(
-          Poppins,
-          normal,
-          600,
-          25px,
-          38px,
-          center
-        );
+        @include mixingfunc.font-style(Arial, normal, 500, 24px, 38px, center);
+      
+        width: 250px;
 
         color: #000000;
         padding: 0;
@@ -73,5 +69,10 @@
   background: #8eaaff;
   border-radius: 50px 0px 0px 50px;
   text-align: center;
-  transition: all 0.4s ease;
+  /* transition: all 0.4s ease; */
+  
+}
+.space-top{
+  margin-top: 35px;
+ 
 }

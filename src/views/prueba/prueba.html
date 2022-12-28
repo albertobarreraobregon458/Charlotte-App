@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script type="text/javascript" src="/src/js/jquery-1.12.0.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/src/js/editor.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/src/css/editor.css">
+    <!--     <script type="text/javascript">
+        $(document).ready(function () {
+            $('.txtarea').Editor();
+
+            $('#txt-content').Editor('setText', ['<p style="color:red;">Hola</p>']);
+
+            $('#btn-enviar').click(function (e) {
+                e.preventDefault();
+                $('#txt-content').text($('#txt-content').Editor('getText'));
+                $('#frm-test').submit();
+            });
+        });	
+    </script> -->
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <section class="cont-new-review open-form-input">
+            <section class=" crud" id="list-select">
+
+                <p class="crud-title p1">Create Activity</p>
+                <form action="" class="crud-form">
+                    <input class="title" type="text" name="activitiName" placeholder="Activity Name" required>
+                    <select class="list-one" name="category">
+                        <option selected disabled="">Category</option>
+                        <option>FREE</option>
+                        <option>BASIC</option>
+                        <option>PRO</option>
+                        <option>PRO +</option>
+                    </select>
+
+                    <select class="list-two" name="tags">
+                        <option selected disabled="">Optional Tags</option>
+                        <option>Read</option>
+                        <option>Write</option>
+                        <option>Speak</option>
+                        <option>Listen</option>
+                    </select>
+
+                    <input class="author" type="text" name="author" placeholder="Author" required>
+
+                    <select class="level" name="level" required>
+                        <option selected disabled="">Level</option>
+                        <option>Level 1</option>
+                        <option>Level 2</option>
+                        <option>Level 3</option>
+                        <option>Level 4</option>
+                        <option>Level 5</option>
+                    </select>
+
+                    <div id="area">
+                        <textarea name="description" class="txtarea" cols="30" rows="10"> </textarea>
+                    </div>
+
+
+                    <input id="create-review" type="submit" value="Create Activity">
+                    <input type="hidden" name="id">
+
+
+                </form>
+
+
+            </section>
+        </section>
+
+
+        <div class="menu">
+            <a href="" class="menu__logo"></a>
+            <div class="menu__list">
+                <li><a href="">Students</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="/src/views/courses/courses.html">Courses</a></li>
+                <li class="press"><a href="/src/views/activity/actividades.html">Activities</a></li>
+                <li><a href="">Resources</a></li>
+                <li><a href="">Certificates</a></li>
+                <li><a href="" class="space">Perzonalized classes</a></li>
+                <li class="space2"><a href="/src/views/promotions/promotions.html">Promotions</a></li>
+                <li><a href="">Membersips</a></li>
+                <li><a href="">Referrals</a></li>
+                <li><a href="">Sponsors</a></li>
+                <li><a href="/src/views/index.html">Reviews</a>
+
+
+            </div>
+
+        </div>
+
+        <section id="nav">
+
+            <div class="nav__icon">
+                <i class="fas fa-bell"></i>
+                <i class="far fa-envelope"></i>
+                <a href="" class="profile"></a>
+            </div>
+        </section>
+
+        <section class="container__tables ">
+            <div class="container__table--blue">
+                <table class="crud-table table">
+                    <!--             <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Activitie title</th>
+                            <th>Category</th>
+                            <th>Tags</th>
+                         >
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody> -->
+                </table>
+            </div>
+            <button class="btn__activities">Agg new Activity</button>
+        </section>
+
+        <section id="modal-container">
+            <div class="modal modal-close">
+                <h3 class="title-modal">Activity Number One</h3>
+                <div class="close"><i class="fas fa-times-circle"></i></div>
+                <!--   <p class="mention-modal">Alysha A. Jones</p>
+                <p class="type-modal">Executive</p> -->
+                <div class="modal-container-section">
+                    <p class="parrafo">
+
+                        Commodi similique cupiditate praesentium facere dignissimos quos distinctio possimus sapiente!
+                        Id tempora magnam itaque sed distinctio alias obcaecati est ab repellendus reiciendis quibusdam,
+
+                    </p>
+                    <div class="section-2">
+                        <div class="img-section"> </div>
+                        <div class="aside"> Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique
+                            cupiditate nobis facilis voluptas fuga provident consequuntur dolor possimus eveniet. Vel
+                            exercitationem delectus aperiam saepe quaerat. Doloribus ipsam suscipit fuga.</div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <form class="form-delete" action="">
+            <section id="modal-container-d">
+                <div class="modal-d modal-close-d">
+                    <h3>Delete item</h3>
+                    <textarea name="cuadro" id="text-d" cols="30" rows="10" placeholder="Reason..." required></textarea>
+                    <button type="submit" class="close-d bnt-d">Yes, Delete</button>
+                    <button class="close-d btn-d2">Cancel</button>
+
+                </div>
+            </section>
+
+        </form>
+
+        <section class="container-notify-succes sucesx alert" id="alert">
+            <i class="fas fa-check-circle close-notify-succes"></i>
+            <p class="parrafo-succes"></p>
+            <!--   <i class="fas fa-check-circle check-succes"></i> -->
+
+        </section>
+        <!--  <div class="alert" id="alert">Algo sucedió..</div> -->
+
+
+        <!--         <section id="container-noti">
+            <div class="noti__idea"></div>
+            <p class="noti__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt eius,
+                animi fugiat debitis, id ipsa sint recusandae eum nobis odit sequi nihil dicta beatae qui eveniet
+                mollitia, excepturi adipisci.</p>
+
+        </section> -->
+
+        <!--        <template id="crud-template">
+            <tr>
+                <td class="id-activitie"></td>
+                <td class="nameActivity"></td>
+                <td class="category"></td>
+                <td class="tags"></td>
+                
+                <td>
+
+                    <div class="icons">
+                        <i class="fas fa-dot-circle read "></i>
+                        <i class="fas fa-pen edit"></i>
+                        <i class="fas fa-times-circle remove delete"></i>
+                    </div>
+                </td>
+            </tr>
+        </template> -->
+
+
+    </div>
+
+    <script src="/src/js/index.js" type="module"></script>
+    < <script src="https://unpkg.com/scrollreveal">
+        </script>
+        <script src="https://kit.fontawesome.com/d65d9c50b6.js" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

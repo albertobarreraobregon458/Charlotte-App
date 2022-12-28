@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/style.css">
     <script type="text/javascript" src="/src/js/jquery-1.12.0.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -12,9 +15,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/src/css/editor.css">
-    <!--     <script type="text/javascript">
+    <script type="text/javascript">
         $(document).ready(function () {
-            $('.txtare').Editor();
+            $('.txtarea').Editor();
 
             $('#txt-content').Editor('setText', ['<p style="color:red;">Hola</p>']);
 
@@ -24,13 +27,12 @@
                 $('#frm-test').submit();
             });
         });	
-    </script> -->
-    <title>Create Activity</title>
+    </script>
+
 </head>
 
 <body>
     <div id="container">
-
         <div class="menu">
             <a href="" class="menu__logo"></a>
             <div class="menu__list">
@@ -58,63 +60,67 @@
                 <a href="" class="profile"></a>
             </div>
         </section>
-
         <section id="cont-new-review">
             <section class="crud" id="list-select">
                 <article>
-                    <p class="crud-title p1">Agregar Actividad</p>
+                    <p class="crud-title p1">Create New Course</p>
                     <form action="" class="crud-form">
                         <!--   <input class="valor" type="text" name="valor" placeholder="id" required> -->
 
-                        <input class="title" type="text" name="activitiName" placeholder="Activity Name" required>
+                        <input class="title" type="text" name="activitiName" placeholder="Course Title" required>
                         <!-- <input class="title" type="text" name="title" placeholder="Activity Name" required> -->
 
                         <select class="list-one" name="category">
                             <option selected disabled="">Category</option>
-                            <option>FREE</option>
-                            <option>PRO</option>
-                            <option>PRO +</option>
+                            <option>Bussiness</option>
+                            <option>Engineer</option>
+                            <option>Specialist</option>
+                            <option>Associate</option>
+                            <option>Producer</option>
+                            <option>Developer</option>
+                            <option>Manager</option>
+                            <option>Technician</option>
+                            <option>Assistant</option>
                         </select>
 
-                        <select class="list-two" name="tags">
-                            <option selected disabled="">Optional Tags</option>
-                            <option>Read</option>
-                            <option>Write</option>
-                            <option>Speak</option>
-                            <option>Listen</option>
-                        </select>
-
-                        <!--    <input class="author" type="text" name="author" placeholder="Author" required> -->
+                        <input class="list-two" type="number" name="" placeholder="Price*">
 
 
-                        <select class="level" name="level" required>
-                            <option selected disabled="">Level</option>
-                            <option>Level 1</option>
-                            <option>Level 2</option>
-                            <option>Level 3</option>
-                            <option>Level 4</option>
-                            <option>Level 5</option>
-                        </select>
-
-                        <div id="area">
+                        <div id="area2">
                             <textarea name="description" class="txtarea" cols="30" rows="10"> </textarea>
                         </div>
 
 
-                        <input id="create-review" type="submit" value="Create Activity">
+                        <input id="create-review" type="submit" value="Create Course">
                         <input type="hidden" name="id">
+
+
                     </form>
                 </article>
 
             </section>
         </section>
+
     </div>
 
-    <!--  <script src="/src/js/prueba.js"></script> -->
-    <!--  <script src="/src/js/index.js" type="module"></script> -->
+    <!--   <template id="crud-template">
+        <tr>
+            <td class="id-activitie"></td>
+            <td class="nameActivity"></td>
+            <td class="category"></td>
+            <td class="tags"></td>
+            <td class="description"></td>
+            <td>
+                <button class="edit">Editar</button>
+                <button class="delete">Eliminar</button>
+            </td>
+        </tr>
+    </template> -->
+
+    <script src="/src/js/prueba.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://kit.fontawesome.com/d65d9c50b6.js" crossorigin="anonymous">
-    </script>
+    <script src="https://kit.fontawesome.com/d65d9c50b6.js" crossorigin="anonymous"> </script>
+
 </body>
 
 </html>

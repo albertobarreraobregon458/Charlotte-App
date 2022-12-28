@@ -1,3 +1,4 @@
+@use "media-queries";
 * {
   margin: 0;
   padding: 0;
@@ -50,5 +51,8 @@
     #5b8ee1 50%,
     #0047a7 100%
   );
+  @media only screen and (max-width: 600px) {
+    background-color: aqua;
+  }
   position: relative;
 }

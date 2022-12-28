@@ -1,0 +1,233 @@
+{
+  "activities": [
+    {
+      "id": 9,
+      "activitiName": "todos ",
+      "category": "FREE",
+      "level": "Level 1",
+      "author": "Allberto Barrera",
+      "tags": "Write",
+      "description": " "
+    },
+    {
+      "id": 10,
+      "activitiName": "hacer ejercicio y actividad 3",
+      "category": "BASIC",
+      "level": "Level 1",
+      "author": "bdxb",
+      "tags": "Write",
+      "description": " "
+    },
+    {
+      "id": 11,
+      "activitiName": "hacer ejercicio y actividad 3",
+      "category": "FREE",
+      "level": "Level 2",
+      "author": "Allberto Barrera",
+      "tags": "Read",
+      "description": " "
+    }
+  ],
+  "course": [
+    {
+      "courseTitle": "programacion web",
+      "category": "Engineer",
+      "price": "6788",
+      "description": " ",
+      "id": 3
+    }
+  ],
+  "promotion": [
+    {
+      "promotionTitle": "La mejor promotion",
+      "promotionPrice": 900000,
+      "promotionOffer": 56000,
+      " promotionDateStart": "01/12/22",
+      "id": 1
+    },
+    {
+      "promotionTitle": "La mejor promotion",
+      "promotionPrice": 900000,
+      "promotionOffer": 56000,
+      " promotionDateStart": "01/12/22",
+      "id": 1
+    },
+    {
+      "promotionTitle": "La mejor promotion",
+      "promotionPrice": 900000,
+      "promotionOffer": 56000,
+      " promotionDateStart": "01/12/22",
+      "id": 1
+    },
+    {
+      "promotionTitle": "La mejor promotion",
+      "promotionPrice": 900000,
+      "promotionOffer": 56000,
+      " promotionDateStart": "01/12/22",
+      "id": 1
+    },
+    {
+      "promotionTitle": "La mejor promotion",
+      "promotionPrice": 900000,
+      "promotionOffer": 56000,
+      " promotionDateStart": "01/12/22",
+      "id": 1
+    },
+    {
+      "promotionTitle": "La mejor promotion",
+      "promotionPrice": 900000,
+      "promotionOffer": 56000,
+      " promotionDateStart": "01/12/22",
+      "id": 1
+    },
+    {
+      "promotionTitle": "La mejor promotion",
+      "promotionPrice": 900000,
+      "promotionOffer": 56000,
+      " promotionDateStart": "01/12/22",
+      "id": 1
+    },
+    {
+      "promotionTitle": "La mejor promotion",
+      "promotionPrice": 900000,
+      "promotionOffer": 56000,
+      " promotionDateStart": "01/12/22",
+      "id": 1
+    },
+    {
+      "promotionTitle": "La mejor promotion",
+      "promotionPrice": 900000,
+      "promotionOffer": 56000,
+      " promotionDateStart": "01/12/22",
+      "id": 1
+    },
+    {
+      "promotionTitle": "La mejor promotion",
+      "promotionPrice": 900000,
+      "promotionOffer": 56000,
+      " promotionDateStart": "01/12/22",
+      "id": 1
+    },
+    {
+      "promotionTitle": "La mejor promotion",
+      "promotionPrice": 900000,
+      "promotionOffer": 56000,
+      " promotionDateStart": "01/12/22",
+      "id": 1
+    },
+    {
+      "promotionTitle": "La mejor promotion",
+      "promotionPrice": 900000,
+      "promotionOffer": 56000,
+      " promotionDateStart": "01/12/22",
+      "id": 1
+    },
+    {
+      "promotionTitle": "La mejor promotion",
+      "promotionPrice": 900000,
+      "promotionOffer": 56000,
+      " promotionDateStart": "01/12/22",
+      "id": 1
+    },
+    {
+      "promotionTitle": "La mejor promotion",
+      "promotionPrice": 900000,
+      "promotionOffer": 56000,
+      " promotionDateStart": "01/12/22",
+      "id": 1
+    }
+  ],
+  "resource": [
+    {
+      "id": 1,
+      "resourceTitle": "recursos",
+      "category": "Books",
+      "tags": "Read",
+      "description": "esta es la descripcion"
+    },
+    {
+      "id": 2,
+      "resourceTitle": "recursos",
+      "category": "Books",
+      "tags": "Read",
+      "description": "esta es la descripcion"
+    },
+    {
+      "id": 3,
+      "resourceTitle": "recursos",
+      "category": "Books",
+      "tags": "Read",
+      "description": "esta es la descripcion"
+    },
+    {
+      "id": 4,
+      "resourceTitle": "recursos",
+      "category": "Books",
+      "tags": "Read",
+      "description": "esta es la descripcion"
+    },
+    {
+      "id": 5,
+      "resourceTitle": "recursos",
+      "category": "Books",
+      "tags": "Read",
+      "description": "esta es la descripcion"
+    },
+    {
+      "id": 6,
+      "resourceTitle": "recursos",
+      "category": "Books",
+      "tags": "Read",
+      "description": "esta es la descripcion"
+    },
+    {
+      "id": 7,
+      "resourceTitle": "recursos",
+      "category": "Books",
+      "tags": "Read",
+      "description": "esta es la descripcion"
+    },
+    {
+      "id": 8,
+      "resourceTitle": "recursos",
+      "category": "Books",
+      "tags": "Read",
+      "description": "esta es la descripcion"
+    },
+    {
+      "resourceTitle": "recursos 1",
+      "category": "Books",
+      "tags": null,
+      "description": " ",
+      "id": 9
+    },
+    {
+      "resourceTitle": "recursos 2",
+      "category": "Books",
+      "tags": null,
+      "description": " ",
+      "id": 10
+    },
+    {
+      "resourceTitle": "",
+      "category": null,
+      "tags": null,
+      "description": " ",
+      "id": 11
+    },
+    {
+      "resourceTitle": "",
+      "category": null,
+      "tags": null,
+      "description": " ",
+      "id": 12
+    },
+    {
+      "resourceTitle": "recursos 1",
+      "category": "Books",
+      "tags": "Speak",
+      "description": " ",
+      "id": 13
+    }
+  ]
+}

@@ -1,0 +1,411 @@
+@use "mixingfunc";
+/* ----------------------Section Form---------------------------- */
+.cont-new-resource {
+  @include mixingfunc.measures(1251px, 840px, 424px, 144px);
+  position: absolute;
+  background: #ffffff;
+  border-radius: 20px;
+
+  .title-resource {
+    box-sizing: border-box;
+    padding-left: 19px;
+    padding-right: 10px;
+    position: absolute;
+    width: 1194px;
+    height: 51px;
+    left: 29px;
+    top: 65px;
+    color: #000;
+    border: 1px solid #8f8f8f;
+    border-radius: 10px;
+    font-size: 25px;
+  }
+}
+.open-form-resource {
+  transform: translateY(-200%);
+}
+
+#cont-form-resource {
+  .input-category-resource {
+    box-sizing: border-box;
+    position: absolute;
+    @include mixingfunc.measures(590px, 51px, 29px, 131px);
+    @include mixingfunc.font-style(Poppins, normal, 400, 25px, 130%, justify);
+    border: 1px solid #8f8f8f;
+    border-radius: 10px;
+    padding-left: 19px;
+    color: #000000;
+  }
+
+  .input-tags-resource{
+
+    box-sizing: border-box;
+    position: absolute;
+    @include mixingfunc.measures(590px, 51px, 632px, 131px);
+    @include mixingfunc.font-style(Poppins, normal, 400, 25px, 130%, justify);
+    border: 1px solid #8f8f8f;
+    border-radius: 10px;
+    padding-left: 19px;
+    color: #000000;
+    
+
+  }
+
+
+  #area-resource {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1194px;
+    height: 530px;
+    left: 29px;
+    top: 200px;
+    
+    border-radius: 10px;
+    .txtarea-resource {
+      margin-top: 0px;
+      resize: none;
+      border-radius: 10px;
+      width: 1194px;
+      height: 530px;
+    }
+  }
+}
+#create-resource {
+  position: absolute;
+  width: 226px;
+  height: 48px;
+  left: 997px;
+  top: 771px;
+
+  background: #338af3;
+  border-radius: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 130%;
+  transition: all 0.4s ease;
+
+  color: #ffffff;
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
+}
+
+.font-title-resource {
+  position: absolute;
+  width: 278px;
+  height: 39px;
+  left: 17px;
+  top: 11px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 130%;
+  /* identical to box height, or 39px */
+
+  color: #000000;
+}
+
+.none-resource {
+  display: none;
+}
+
+.input-category-resource {
+  box-sizing: border-box;
+  position: absolute;
+  @include mixingfunc.measures(590px, 51px, 29px, 131px);
+  @include mixingfunc.font-style(Poppins, normal, 400, 25px, 130%, justify);
+  border: 1px solid #8f8f8f;
+  border-radius: 10px;
+  padding-left: 19px;
+  color: #000000;
+}
+
+.font-title-resourcen {
+  position: absolute;
+  width: 400px;
+  height: 39px;
+  left: 17px;
+  top: 11px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 130%;
+}
+
+.input-offer-resource {
+  box-sizing: border-box;
+  position: absolute;
+  @include mixingfunc.measures(590px, 51px, 633px, 197px);
+  border: 1px solid #8f8f8f;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 130%;
+  color: #000000;
+  padding-left: 19px;
+}
+
+#area-resource {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 1194px;
+  height: 443px;
+  left: 29px;
+  top: 200px;
+  border-radius: 10px;
+  .txtarea-resource {
+    margin-top: 70px;
+    resize: none;
+    border-radius: 10px;
+    width: 1194px;
+    height: 483px;
+  }
+}
+
+/*----------------------------- Section Table---------------------- */
+
+.cont-tables-resource {
+  //@include mixingfunc.measures(1051px, 594px, 344px, 142px);
+  margin: 142px 45px 288px 424px;
+
+  width: 1251px;
+  height: 594px;
+  background: #8eaaff;
+  border-radius: 20px;
+  position: absolute;
+
+  .cont-table-resource_blue {
+    overflow-y: auto;
+    width: 1251px;
+    height: 529px;
+    border-radius: 18px;
+  }
+
+  .table-resource {
+    width: 1251px;
+    height: 529px;
+    background: #ffffff;
+    border-radius: 20px;
+    border-collapse: collapse;
+    th {
+      @include mixingfunc.font-style(
+        Helvetica,
+        normal,
+        600,
+        30px,
+        130%,
+        center
+      );
+      font-family: Arial, Helvetica, sans-serif;
+      border: solid 1px black;
+      max-height: 53px;
+    }
+    td {
+      @include mixingfunc.font-style(Helvetica, normal, 400, 25px, 130%, left);
+      border: solid 1px black;
+      padding-left: 17px;
+      padding-right: 17px;
+
+      max-height: 39px;
+      max-width: 400px;
+      text-align: justify;
+    }
+  }
+}
+.up-table-resource {
+  transform: translateY(-200%);
+}
+
+.btn-resource {
+  @include mixingfunc.measures(256px, 48px, 980px, 539px);
+  @include mixingfunc.font-style(Inter, normal, 600, 25px, 130%, center);
+  background: #338af3;
+  border-radius: 20px;
+  position: absolute;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  padding-top: 5px;
+
+  &:hover {
+    background: #fff;
+    color: #000;
+    transition: all 0.4s ease;
+  }
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*------------------Section Modal-----------*/
+
+#modal-container-resource {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  @include mixingfunc.measures(100%, 100%, 0, 0);
+  background-color: rgba(143, 143, 143, 0.65);
+}
+.modal-close-resource {
+  transform: translateY(-200%);
+}
+
+.modal-resource {
+  position: absolute;
+  width: 928px;
+  height: 971px;
+  left: 493px;
+  top: 28px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  transition: transform 1s;
+  transform: translateY(0%);
+
+  .parrafo {
+    position: absolute;
+    @include mixingfunc.measures(850px, 307px, 39px, 71px);
+    @include mixingfunc.font-style(Poppins, normal, 400, 25px, 130%, center);
+    text-align: justify;
+    color: #000000;
+    overflow-y: scroll;
+  }
+  .title-modal-resource {
+    position: absolute;
+    @include mixingfunc.measures(328px, 32px, 300px, 23px);
+    @include mixingfunc.font-style(Poppins, normal, 700, 25px, 130%, center);
+    color: #000000;
+  }
+
+  .close-resource {
+    position: absolute;
+    left: 95.04%;
+    right: 1.72%;
+    top: 2.11%;
+    bottom: 93.65%;
+    color: #000;
+    i {
+      font-size: 30px;
+    }
+  }
+  .cont-p-resource {
+    position: absolute;
+    width: 850px;
+    height: 318px;
+    left: 39px;
+    top: 167px;
+    p {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 130%;
+      /* or 32px */
+
+      text-align: justify;
+
+      color: #000000;
+    }
+  }
+  .pe {
+    position: absolute;
+    width: 171px;
+    height: 32px;
+    left: 39px;
+    top: 462px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    color: #000000;
+  }
+  .do {
+    position: absolute;
+    width: 84px;
+    height: 32px;
+    left: 39px;
+    top: 494px;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    /* or 32px */
+
+    color: #000000;
+  }
+}
+.price-prom {
+  position: absolute;
+  width: 82px;
+  height: 32px;
+  left: 39px;
+  top: 87px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 130%;
+  /* or 32px */
+  text-decoration-line: line-through;
+  color: rgba(255, 0, 0, 0.65);
+}
+.offer-prom {
+  position: absolute;
+  width: 71px;
+  height: 32px;
+  left: 39px;
+  top: 119px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 130%;
+  /* or 32px */
+
+  color: #038c33;
+}
+.date-prom {
+  position: absolute;
+  width: 103px;
+  height: 32px;
+  left: 786px;
+  top: 87px;
+
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 130%;
+  /* or 32px */
+
+  color: #000000;
+}
+
+.off {
+  position: absolute;
+  width: 433px;
+  height: 423px;
+  left: 248px;
+  top: 336px;
+
+  background: url("/src/public/off.png");
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
