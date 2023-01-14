@@ -1,4 +1,5 @@
 @use "media-queries";
+@use "mixingfunc";
 * {
   margin: 0;
   padding: 0;
@@ -55,4 +56,36 @@
     background-color: aqua;
   }
   position: relative;
+}
+
+.center{
+  text-align: center;
+}
+
+.no-activities {
+  background-color: rgba(230, 230, 230, 0.65);
+  @include mixingfunc.font-style(Cambria, normal, 550, 65px, 130%, center);
+  width: 1100px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 70px 50px 0px 75.5px;
+  border-radius: 20px;
+}
+
+.no-description{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(230, 230, 230, 0.65);
+  width: 830px;
+  height: 600px;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 600px;
+  margin-left: 20px;
+  margin-top: 55px;
+  border-radius: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

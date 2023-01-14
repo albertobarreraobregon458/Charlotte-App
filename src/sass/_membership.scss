@@ -1,12 +1,12 @@
 @use "mixingfunc";
 /* ----------------------Section Form---------------------------- */
-.cont-new-promotion {
+.cont-new-member {
   @include mixingfunc.measures(1251px, 840px, 424px, 144px);
   position: absolute;
   background: #ffffff;
   border-radius: 20px;
 
-  .title-promotion {
+  .title-member {
     box-sizing: border-box;
     padding-left: 19px;
     padding-right: 10px;
@@ -21,14 +21,12 @@
     font-size: 25px;
   }
 }
-.open-form-promotion {
+.open-form-member {
   transform: translateY(-200%);
 }
 
-
-
-#cont-form-promotion {
-  .input-category-course {
+#cont-form-member {
+  .input-category-member {
     box-sizing: border-box;
     position: absolute;
     @include mixingfunc.measures(590px, 51px, 29px, 131px);
@@ -39,46 +37,29 @@
     color: #000000;
   }
 
-  .input-price-promotion {
+  .input-tags-member{
+
     box-sizing: border-box;
     position: absolute;
-    @include mixingfunc.measures(590px, 51px, 633px, 131px);
+    @include mixingfunc.measures(590px, 51px, 632px, 131px);
+    @include mixingfunc.font-style(Arial, normal, 400, 25px, 130%, justify);
     border: 1px solid #8f8f8f;
     border-radius: 10px;
-    font-family: "Arial";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 130%;
-    color: #000000;
     padding-left: 19px;
+    color: #000000;
+    
+
   }
 
- 
 
-  #area-promotion {
-    box-sizing: border-box;
 
-    position: absolute;
-    width: 1194px;
-    height: 443px;
-    left: 29px;
-    top: 200px;
-    border-radius: 10px;
-    .txtarea-course {
-      margin-top: 40px;
-      resize: none;
-      border-radius: 10px;
-      width: 1194px;
-      height: 483px;
-    }
-  }
+
 }
-#create-promotion {
+#create-member {
   position: absolute;
-  width: 226px;
+  width: 266px;
   height: 48px;
-  left: 997px;
+  left: 957px;
   top: 771px;
 
   background: #338af3;
@@ -97,7 +78,7 @@
   }
 }
 
-.font-title-promotion {
+.font-title-member {
   position: absolute;
   width: 278px;
   height: 39px;
@@ -114,50 +95,11 @@
   color: #000000;
 }
 
-.input-DateEnd-promotion {
-  position: absolute;
-  width: 290px;
-  height: 51px;
-  left: 26px;
-  top: 198px;
-  font-family: "Arial";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 23px;
-  line-height: 130%;
-  z-index: 1000;
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  /* identical to box height, or 39px */
-
-  color: #000000;
-}
-.input-DateStart-promotion {
-  position: absolute;
-  width: 290px;
-  height: 51px;
-  left: 327px;
-  top: 198px;
-  font-family: "Arial";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 23px;
-  line-height: 130%;
-  z-index: 1000;
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  /* identical to box height, or 39px */
-
-  color: #000000;
-}
-
-.none-promotion {
+.none-member {
   display: none;
 }
 
-.input-category-promotion {
+.input-category-member {
   box-sizing: border-box;
   position: absolute;
   @include mixingfunc.measures(590px, 51px, 29px, 131px);
@@ -168,7 +110,7 @@
   color: #000000;
 }
 
-.font-title-promotion {
+.font-title-member {
   position: absolute;
   width: 400px;
   height: 39px;
@@ -182,7 +124,7 @@
   line-height: 130%;
 }
 
-.input-offer-promotion {
+.input-offer-member {
   box-sizing: border-box;
   position: absolute;
   @include mixingfunc.measures(590px, 51px, 633px, 197px);
@@ -195,31 +137,44 @@
   line-height: 130%;
   color: #000000;
   padding-left: 19px;
-  z-index: 1000;
 }
 
-#area-promotion {
+#area-member {
   box-sizing: border-box;
 
   position: absolute;
   width: 1194px;
-  height: 400px;
+  height: 550px;
   left: 29px;
-  margin-top: 70px;
+  top: 200px;
+  
   border-radius: 10px;
-
-  .txtarea-promotion {
+  .txtarea-member {
     margin-top: 10px;
     resize: none;
     border-radius: 10px;
     width: 1194px;
-    height: 430px;
+    height: 550px;
   }
+}
+.input-price-member{
+    box-sizing: border-box;
+    position: absolute;
+    @include mixingfunc.measures(590px, 51px, 633px, 131px);
+    border: 1px solid #8f8f8f;
+    border-radius: 10px;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    color: #000000;
+    padding-left: 19px;
 }
 
 /*----------------------------- Section Table---------------------- */
 
-.cont-tables-promotion {
+.cont-tables-member {
   //@include mixingfunc.measures(1051px, 594px, 344px, 142px);
   margin: 142px 45px 288px 424px;
 
@@ -229,27 +184,34 @@
   border-radius: 20px;
   position: absolute;
 
-  .cont-table-promotion_blue {
+  .cont-table-member_blue {
     overflow-y: auto;
     width: 1251px;
     height: 529px;
     border-radius: 18px;
   }
 
-  .table-promotion {
+  .table-member {
     width: 1251px;
     height: 529px;
     background: #ffffff;
     border-radius: 20px;
     border-collapse: collapse;
     th {
-      @include mixingfunc.font-style(Arial, normal, 600, 30px, 130%, center);
-      font-family: Arial;
+      @include mixingfunc.font-style(
+        Helvetica,
+        normal,
+        600,
+        30px,
+        130%,
+        center
+      );
+      font-family: Arial, Helvetica, sans-serif;
       border: solid 1px black;
       max-height: 53px;
     }
     td {
-      @include mixingfunc.font-style(Arial, normal, 400, 25px, 130%, left);
+      @include mixingfunc.font-style(Helvetica, normal, 400, 25px, 130%, left);
       border: solid 1px black;
       padding-left: 17px;
       padding-right: 17px;
@@ -260,12 +222,12 @@
     }
   }
 }
-.up-table-promotion {
+.up-table-member {
   transform: translateY(-200%);
 }
 
-.btn-promotion {
-  @include mixingfunc.measures(280px, 48px, 950px, 539px);
+.btn-member {
+  @include mixingfunc.measures(290px, 48px, 950px, 539px);
   @include mixingfunc.font-style(Arial, normal, 600, 25px, 130%, center);
   background: #338af3;
   border-radius: 20px;
@@ -283,8 +245,13 @@
   text-decoration: none;
 }
 
-/*------------------Section Modal-----------*/
-#modal-container-promotion {
+
+
+
+
+/*-------------Modal delete --------------------------*/
+
+#modal-container-member {
   opacity: 0;
  visibility: hidden;  
  position: absolute;
@@ -294,7 +261,7 @@
 }
 
 
-.modal-promotion {
+.modal-member {
  position: relative;
  width: 930px;
  height: 800px;
@@ -307,7 +274,7 @@ background-color: #ffffff;
  transition: transform 1s;
  transform: translateY(0%);
 
- .close-promotion {
+ .close-member {
    position: absolute;
    left: 94.2%;
    right: 1.72%;
@@ -320,7 +287,7 @@ background-color: #ffffff;
    }
  }
 
- .cont-p-promotion {
+ .cont-p-member {
    position: absolute;
    width: 920px;
    max-height: 785px;
@@ -333,14 +300,16 @@ background-color: #ffffff;
  }
 
 }
-.modal-clp {
+.modal-clm {
  transform: translateY(-200%); 
 }
 
 
 
 
-.icons-promotion {
+
+/*----------------buttons admin------------------*/
+.icons-member {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -349,7 +318,7 @@ background-color: #ffffff;
     height: 30px;
   }
 
-  .edit-promotion {
+  .edit-member {
     font-size: 30px;
     color: #ff9811;
     transition: all 0.5s ease;
@@ -357,7 +326,7 @@ background-color: #ffffff;
       color: #6e7f8f;
     }
   }
-  .remove-promotion {
+  .remove-member {
     font-size: 30px;
     color: red;
      &:hover {
@@ -365,7 +334,7 @@ background-color: #ffffff;
     }
   }
 
-  .read-promotion {
+  .read-member {
     font-size: 30px;
     color: #0057ff;
      &:hover {

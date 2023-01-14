@@ -18,13 +18,13 @@
   .table {
     width: 1251px;
     height: 529px;
-    background: #dd0f0f;
+    
     border-radius: 20px;
     border-collapse: collapse;
 
     th {
       @include mixingfunc.font-style(Arial, normal, 400, 28px, 130%, center);
-      font-family: Arial;
+     
       border: solid 1px black;
       max-height: 53px;
     }
@@ -34,7 +34,7 @@
       padding-left: 17px;
       padding-right: 17px;
 
-      max-height: 39px;
+      height: 39px;
       max-width: 400px;
       text-align: justify;
       display: flex;
@@ -69,12 +69,12 @@
     font-family: "Arial";
     th {
       @include mixingfunc.font-style(Arial, normal, 600, 30px, 130%, center);
-      font-family: sans-serif;
+      font-family: Arial;
       border: solid 1px black;
       max-height: 53px;
     }
     td {
-      @include mixingfunc.font-style(sans-serif, normal, 400, 25px, 130%, left);
+      @include mixingfunc.font-style(Arial, normal, 400, 25px, 130%, left);
       border: solid 1px black;
       padding-left: 17px;
       padding-right: 17px;
@@ -90,7 +90,7 @@
 }
 .btn__activities {
   @include mixingfunc.measures(226px, 48px, 1000px, 539px);
-  @include mixingfunc.font-style(sans-serif, normal, 600, 25px, 130%, center);
+  @include mixingfunc.font-style(Arial, normal, 600, 25px, 130%, center);
   background: #338af3;
   border-radius: 20px;
   position: absolute;
@@ -134,17 +134,7 @@
     color: #0057ff;
   }
 }
-.no-activities {
-  background-color: rgba(178, 181, 182, 0.5);
-  @include mixingfunc.font-style(sans-serif, normal, 600, 50px, 130%, center);
-  width: 700px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 150px 50px 0px 300px;
-  border-radius: 10px;
-}
+
 .table-course {
   width: 1251px;
   height: 529px;
@@ -152,14 +142,14 @@
   border-radius: 20px;
   border-collapse: collapse;
   th {
-    @include mixingfunc.font-style(sans-serif, normal, 600, 30px, 130%, center);
-    font-family: sans-serif;
+    @include mixingfunc.font-style(Arial, normal, 600, 30px, 130%, center);
+    font-family: Arial;
     border: solid 1px black;
-    max-height: 53px;
+    height: 100px;
     table-layout: fixed;
   }
   td {
-    @include mixingfunc.font-style(sans-serif, normal, 400, 25px, 130%, left);
+    @include mixingfunc.font-style(Arial, normal, 400, 25px, 130%, left);
     border: solid 1px black;
     padding-left: 17px;
     padding-right: 17px;

@@ -1,12 +1,12 @@
 @use "mixingfunc";
 /* ----------------------Section Form---------------------------- */
-.cont-new-resource {
-  @include mixingfunc.measures(1251px, 840px, 424px, 144px);
+.cont-new-sponsor {
+  @include mixingfunc.measures(1251px, 342px, 424px, 184px);
   position: absolute;
   background: #ffffff;
   border-radius: 20px;
 
-  .title-resource {
+  .title-sponsor {
     box-sizing: border-box;
     padding-left: 19px;
     padding-right: 10px;
@@ -21,13 +21,70 @@
     font-size: 25px;
     
   }
+
+  .file-sponsor{
+    display: flex;
+    box-sizing: border-box;
+    padding-left: 19px;
+    padding-right: 10px;
+    position: absolute;
+    width: 1194px;
+    height: 51px;
+    left: 29px;
+    top: 197px;
+    color: #000;
+    border: 1px solid #8f8f8f;
+    border-radius: 10px;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-right: 80px;
+
 }
-.open-form-resource {
+.file-sponsor-btn{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 1110px;
+    font-size: 32px;
+    color: #000;
+
+}
+
+
+.file-sponsor-text{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: rgb(97, 97, 97);
+}
+
+
+  .truck{
+  
+   /*  position: absolute; */
+    width: 488px;
+    border-radius: 50%;
+    height: 488px;
+    left: 220px;
+    top: 200px;
+    background: url("/src/public/paisaje.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+#imgSponsor{
+    display: none;
+}
+
+}
+.open-form-sponsor {
   transform: translateY(-200%);
 }
 
-#cont-form-resource {
-  .input-category-resource {
+
+  .address-sponsor {
     box-sizing: border-box;
     position: absolute;
     @include mixingfunc.measures(590px, 51px, 29px, 131px);
@@ -38,7 +95,7 @@
     color: #000000;
   }
 
-  .input-tags-resource{
+  .web-sponsor{
     box-sizing: border-box;
     position: absolute;
     @include mixingfunc.measures(590px, 51px, 632px, 131px);
@@ -47,34 +104,15 @@
     border-radius: 10px;
     padding-left: 19px;
     color: #000000;
-    
-
   }
 
 
-  #area-resource {
-    box-sizing: border-box;
-    position: absolute;
-    width: 1194px;
-    height: 530px;
-    left: 29px;
-    top: 200px;
-    border-radius: 10px;
-    .txtarea-resource {
-      margin-top: 0px;
-      resize: none;
-      border-radius: 10px;
-      width: 1194px;
-      height: 530px;
-    }
-  }
-}
-#create-resource {
+#create-sponsor {
   position: absolute;
   width: 236px;
   height: 48px;
   left: 987px;
-  top: 771px;
+  top: 273px;
 
   background: #338af3;
   border-radius: 20px;
@@ -94,12 +132,12 @@
     border: 1px solid; */
   }
 }
-.cancel-form{
+.cancel-sponsor{
   position: absolute;
-  width: 180px;
+  width: 170px;
   height: 48px;
-  left: 35px;
-  top: 771px;
+  left: 25px;
+  top: 273px;
   background:white ;
   font-family: Arial;
   font-style: normal;
@@ -114,7 +152,7 @@
     
   }
 }
-.font-title-resource {
+.font-title-sponsor {
   position: absolute;
   width: 278px;
   height: 39px;
@@ -131,19 +169,7 @@
   color: #000000;
 }
 
-
-.input-category-resource {
-  box-sizing: border-box;
-  position: absolute;
-  @include mixingfunc.measures(590px, 51px, 29px, 131px);
-  @include mixingfunc.font-style(Arial, normal, 400, 25px, 130%, justify);
-  border: 1px solid #8f8f8f;
-  border-radius: 10px;
-  padding-left: 19px;
-  color: #000000;
-}
-
-.font-title-resource {
+.font-title-sponsor {
   position: absolute;
   width: 400px;
   height: 39px;
@@ -157,42 +183,11 @@
   line-height: 130%;
 }
 
-.input-offer-resource {
-  box-sizing: border-box;
-  position: absolute;
-  @include mixingfunc.measures(590px, 51px, 633px, 197px);
-  border: 1px solid #8f8f8f;
-  border-radius: 10px;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 130%;
-  color: #000000;
-  padding-left: 19px;
-}
 
-#area-resource {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 1194px;
-  height: 443px;
-  left: 29px;
-  top: 200px;
-  border-radius: 10px;
-  .txtarea-resource {
-    margin-top: 70px;
-    resize: none;
-    border-radius: 10px;
-    width: 1194px;
-    height: 483px;
-  }
-}
 
 /*----------------------------- Section Table---------------------- */
 
-.cont-tables-resource {
+.cont-tables-sponsor {
   //@include mixingfunc.measures(1051px, 594px, 344px, 142px);
   margin: 142px 45px 288px 424px;
 
@@ -202,14 +197,14 @@
   border-radius: 20px;
   position: absolute;
 
-  .cont-table-resource_blue {
+  .cont-table-sponsor_blue {
     overflow-y: auto;
     width: 1251px;
     height: 529px;
     border-radius: 18px;
   }
 
-  .table-resource {
+  .table-sponsor {
     width: 1251px;
     height: 529px;
     background: #ffffff;
@@ -240,11 +235,11 @@
     }
   }
 }
-.up-table-resource {
+.up-table-sponsor {
   transform: translateY(-200%);
 }
 
-.btn-resource {
+.btn-sponsor {
   @include mixingfunc.measures(256px, 48px, 980px, 539px);
   @include mixingfunc.font-style(Arial, normal, 600, 25px, 130%, center);
   background: #338af3;
@@ -265,7 +260,7 @@
 
 /*------------------Section Modal-----------*/
 
-#modal-container-resource {
+#modal-container-sponsor {
    opacity: 0;
   visibility: hidden;  
   position: absolute;
@@ -275,24 +270,24 @@
 }
 
 
-.modal-resource {
+.modal-sponsor {
   position: relative;
   width: 930px;
-  height: 800px;
+  height: 699px;
   left: 493px;
-  top: 70px;
+  top: 155px;
   border-radius: 10px;
  background-color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-  transition: transform 1.2s;
+  transition: transform 1s;
   transform: translateY(0%);
 
-  .close-resource {
+  .close-sponsor {
     position: absolute;
-    left: 94.2%;
+    left: 890px;
     right: 1.72%;
-    top: 2.50%;
+    top: 10px;
     bottom: 93.65%;
     color: #000;
     z-index: 1000;
@@ -301,7 +296,7 @@
     }
   }
 
-  .cont-p-resource {
+  .cont-p-sponsor {
     position: absolute;
     width: 920px;
     max-height: 785px;
@@ -315,7 +310,7 @@
  
 }
 .modal-clos {
-  transform: translateY(-200%); 
+  transform: translateY(-400%); 
  }
 
 
@@ -392,7 +387,7 @@
 
 
 /*----------------buttons admin------------------*/
-.icons-resource {
+.icons-sponsor {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -403,14 +398,14 @@
     transition: all 0.3s ease;
   }
 
-  .edit-resource {
+  .edit-sponsor {
     font-size: 34px;
     color: #ff9811;
     &:hover {
       color: #6e7f8f;
     }
   }
-  .remove-resource {
+  .remove-sponsor {
     font-size: 34px;
     color: red;
      &:hover {
@@ -418,7 +413,7 @@
     }
   }
 
-  .read-resource {
+  .read-sponsor {
     font-size: 34px;
     color: #0057ff;
      &:hover {
@@ -429,5 +424,33 @@
 .stylee{
   color: #d80027;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.refname{
+  display: flex;
+  font-size: 25px;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 25px;
+}
+.refemail{
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+  margin-top: 25px;
+}
+.refphone{
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 25px;
 
 }
+

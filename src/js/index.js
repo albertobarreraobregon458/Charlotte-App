@@ -1,112 +1,16 @@
-import {
-  ModalRemoveActivities,
-  ModalShowActivities,
-  /*   escrollBehavor, */
-  openFormActivities,
-  /*  getAllActivities,
-  ph, */
-  /*  insertActivities, */
-  /*   tiempo_carga, */
-  activitiesp,
-} from "./activities.js";
-/* import { getPruebas } from "./bueno.js"; */
-import {
-  coursesP,
-  /*  escrollBehavorCo, */
-  /*  getAllCourses, */
-  ModalRemoveCourses,
-  ModalShowCourses,
-  openFormCourses,
-} from "./courses.js";
-import {
-  getAllPromotions,
-  ModalRemovePromotions,
-  ModalShowPromotions,
-  openFormPromotions,
-} from "./promotions.js";
-import {
-  ModalShowResources,
-  openFormResources,
-  resourcep,
-} from "./resource.js";
+export function validaEmail(section) {
+  let validEmai = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+  let l =
+    /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
-const d = document;
-d.addEventListener("DOMContentLoaded", (e) => {
-  /* getAllActivities(); */
-  getAllPromotions();
-  coursesP();
-  /*   getPruebas(".crud-table"); */
-  /*   tiempo_carga(); */
-  activitiesp();
-  resourcep();
-});
+  if (!validEmai.test(section)) {
+    const value = section;
+    section = "* enter a valid email";
 
-/* insertActivities(); */
-/*---------------------------------------Admin Activities--------------------------*/
-ModalShowActivities(".fa-dot-circle", ".close", "#modal-container", ".modal");
-ModalRemoveActivities(
-  ".remove",
-  ".close-de",
-  "#modal-container-de",
-  ".modal-de"
-);
-/* escrollBehavor(
-  ".container__table--blue",
-  ".head",
-  ".body",
-  ".container__tables"
-); */
+    setTimeout(() => {
+      section = value;
+    }, 1500);
 
-openFormActivities(
-  ".btn__activities",
-  /*  ".btn-submit", */
-  ".cont-new-review",
-  ".container__tables",
-  "#container-noti"
-);
-/*---------------------------------------Admin Courses--------------------------*/
-
-ModalShowCourses(
-  ".fa-dot-circle",
-  ".close-course",
-  "#modal-container-course",
-  ".modal-course"
-);
-ModalRemoveCourses(".remove", ".close-dc", "#modal-container-dc", ".modal-dc");
-openFormCourses(".btn-courses", ".cont-new-course", ".cont-tables-course");
-/* escrollBehavorCo(
-  ".cont-table-course_blue",
-  ".head",
-  ".body",
-  ".cont-tables-course"
-);
- */
-/*---------------------------------------Admin Promotions--------------------------*/
-ModalShowPromotions(
-  ".fa-dot-circle",
-  ".close-promotion",
-  "#modal-container-promotion",
-  ".modal-promotion"
-);
-ModalRemovePromotions(".remove", ".close-d", "#modal-container-d", ".modal-d");
-openFormPromotions(
-  ".btn-promotion",
-  ".cont-new-promotion",
-  ".cont-tables-promotion"
-);
-
-/* ph(); */
-
-/*--------------------------------------Admin Resource---------------------------------*/
-
-openFormResources(
-  ".btn-resource",
-  ".cont-new-resource",
-  ".cont-tables-resource"
-);
-ModalShowResources(
-  ".fa-dot-circle",
-  ".close-resource",
-  "#modal-container-resource",
-  ".modal-resource"
-);
+    return;
+  }
+}
