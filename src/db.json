@@ -1,13 +1,41 @@
 {
   "activities": [
     {
-      "activitiName": "",
-      "category": null,
+      "id": 1,
+      "activitiName": {},
+      "category": {
+        "0": {},
+        "1": {},
+        "2": {},
+        "3": {},
+        "4": {}
+      },
+      "level": {
+        "0": {},
+        "1": {},
+        "2": {},
+        "3": {},
+        "4": {},
+        "5": {}
+      },
+      "author": {},
+      "tags": {
+        "0": {},
+        "1": {},
+        "2": {},
+        "3": {},
+        "4": {}
+      },
+      "description": "<p><br></p>"
+    },
+    {
+      "id": 2,
+      "activitiName": "[object Object]",
+      "category": "",
       "level": "Level 3",
-      "author": "",
-      "tags": null,
-      "description": "<p><br></p>",
-      "id": 1
+      "author": "[object Object]",
+      "tags": "",
+      "description": "<p><br></p>"
     }
   ],
   "course": [

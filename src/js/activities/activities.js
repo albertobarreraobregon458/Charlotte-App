@@ -79,7 +79,6 @@ export function openFormActivities(btnshow, btnclose, modal, table, noti) {
 
 function CodeTh() {
   let code = `
-   
     <thead class ="head">
     <tr class = "th">
     <th>ID</th>
@@ -118,7 +117,6 @@ const renderActivities = (activitie) => {
   let codigo = "";
   activitie.forEach((ele) => {
     const $tr = d.createElement("tr");
-
     codigo = `
     <tbody class = "body">
     <tr class = "tr">
@@ -142,15 +140,16 @@ const renderActivities = (activitie) => {
   $tableActivity.appendChild($fragment);
 };
 
-function color(activity) {
-  console.log(d.querySelector(".tr").textContent);
-  activity.forEach((el, i) => {
-    /*   console.log(activity[i].category); */
-    /*  if (activity[i].category === "FREE") {
-
-    
-    } */
-  });
+function getDataFromForm() {
+  return {
+    id: $formActivity.idi.value,
+    activitiName: $formActivity.activitiName,
+    category: $formActivity.category,
+    level: $formActivity.level,
+    author: $formActivity.author,
+    tags: $formActivity.tags,
+    description: editor.getContents(),
+  };
 }
 
 d.addEventListener("click", (e) => {
